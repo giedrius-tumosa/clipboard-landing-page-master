@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Clipboard landing page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="flex-column-1">
+    <div class="wrapper flex-column-1">
+      <!-- HEADER Start-->
+
+      <header class="header padding-inline-mobile flex-column-1">
+        <figure class="header__logo">
+          <img
+            src="./images/logo.svg"
+            alt="Company logo image."
+            width="125"
+            height="125"
+          />
+        </figure>
+        <article class="header__article text-box-width-1">
+          <h1 class="heading-1">A history of everything you copy</h1>
+          <p class="text-1">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </article>
+        <section class="header__buttons button-box">
+          <button class="button-download btn-1 text-button">
+            Download for
+            <abbr title="Operating system for mobile Apple devices.">iOS</abbr>
+          </button>
+          <button class="button-download btn-2 text-button">
+            Download for
+            <abbr title="Operating system for desktop Apple devices.">Mac</abbr>
+          </button>
+        </section>
+      </header>
+      <!-- HEADER End-->
+
+      <!-- MAIN Start-->
+      <main class="main padding-inline-mobile">
+        <!-- Article 1 Start -->
+        <article class="main__product-feature feature-snippet flex-column-1">
+          <section class="feature__text text-box-width-1">
+            <h2 class="feature-title heading-2">Keep track of your snippets</h2>
+            <p class="feature-description text-2">
+              Clipboard instantly stores any item you copy in the cloud, meaning
+              you can access your snippets immediately on all your devices. Our
+              Mac and iOS apps will help you organize everything.
+            </p>
+          </section>
+          <section class="feature-additional-info snippets">
+            <figure class="snippets__figure">
+              <img
+                src="./images/image-computer.png"
+                alt="Image of computer."
+                width="752"
+                height="572"
+              />
+            </figure>
+            <ul
+              class="snippets__additional-feature-list flex-column-1 row-gap-4"
+            >
+              <li>
+                <h3 class="additional-feature-title heading-3">Quick Search</h3>
+                <p class="additional-feature-description text-3">
+                  Easily search your snippets by content, category, web address,
+                  application, and more.
+                </p>
+              </li>
+              <li>
+                <h3 class="additional-feature-title heading-3">iCloud Sync</h3>
+                <p class="additional-feature-description text-3">
+                  Instantly saves and syncs snippets across all your devices.
+                </p>
+              </li>
+              <li>
+                <h3 class="additional-feature-title heading-3">
+                  Complete History
+                </h3>
+                <p class="additional-feature-description text-3">
+                  Retrieve any snippets from the first moment you started using
+                  the app.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- Article 1 End -->
+
+        <!-- Article 2 Start -->
+        <article
+          class="main__product-feature feature-access-anywhere flex-column-1"
+        >
+          <section class="feature__text text-box-width-1">
+            <h2 class="feature-title heading-2">Access Clipboard anywhere</h2>
+            <p class="feature-description text-2">
+              Whether you’re on the go, or at your computer, you can access all
+              your Clipboard snippets in a few simple clicks.
+            </p>
+          </section>
+          <section class="feature-additional-info clipboard">
+            <figure class="clipboard__figure">
+              <img
+                src="./images/image-devices.png"
+                alt="Image of compatible devices."
+                width="905"
+                height="575"
+              />
+            </figure>
+          </section>
+        </article>
+        <!-- Article 2 End -->
+
+        <!-- Article 3 Start -->
+        <article class="main__product-feature feature-workflow flex-column-1">
+          <section class="feature__text text-box-width-1">
+            <h2 class="feature-title heading-2">Supercharge your workflow</h2>
+            <p class="feature-description text-2">
+              We've got the tools to boost your productivity.
+            </p>
+          </section>
+          <section class="feature-additional-info workflow">
+            <ul
+              class="workflow__additional-feature-list flex-column-1 row-gap-5"
+            >
+              <li class="flex-column-1 row-gap-1">
+                <img
+                  src="./images/icon-blacklist.svg"
+                  alt="Icon for blacklist feature."
+                  width="44"
+                  height="40"
+                />
+                <h3 class="additional-feature-title heading-3">
+                  Create blacklists
+                </h3>
+                <p class="additional-feature-description text-3">
+                  Ensure sensitive information never makes its way to your
+                  clipboard by excluding certain sources.
+                </p>
+              </li>
+              <li class="flex-column-1 row-gap-1">
+                <img
+                  src="./images/icon-text.svg"
+                  alt="Icon for text snippets feature."
+                  width="36"
+                  height="32"
+                />
+                <h3 class="additional-feature-title heading-3">
+                  Plain text snippets
+                </h3>
+                <p class="additional-feature-description text-3">
+                  Remove unwanted formatting from copied text for a consistent
+                  look.
+                </p>
+              </li>
+              <li class="flex-column-1 row-gap-1">
+                <img
+                  src="./images/icon-preview.svg"
+                  alt="Icon for sneak preview feature."
+                  width="50"
+                  height="32"
+                />
+                <h3 class="additional-feature-title heading-3">
+                  Sneak preview
+                </h3>
+                <p class="additional-feature-description text-3">
+                  Quick preview of all snippets on your Clipboard for easy
+                  access.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- Article 3 End -->
+
+        <!-- Section - client companies Start -->
+        <section class="main__client-companies flex-column-1 row-gap-3">
+          <img
+            src="./images/logo-google.png"
+            alt="Logo for Google company."
+            class="client-logo"
+            width="165"
+            height="49"
+          />
+          <img
+            src="./images/logo-ibm.png"
+            alt="Logo for IBM company."
+            class="client-logo"
+            width="139"
+            height="51"
+          />
+          <img
+            src="./images/logo-microsoft.png"
+            alt="Logo for Microsoft company."
+            class="client-logo"
+            width="161"
+            height="35"
+          />
+          <img
+            src="./images/logo-hp.png"
+            alt="Logo for Hewlett Packard company."
+            class="client-logo"
+            width="135"
+            height="56"
+          />
+          <img
+            src="./images/logo-vector-graphics.png"
+            alt="Logo for Vector Graphics company."
+            class="client-logo"
+            width="125"
+            height="30"
+          />
+        </section>
+        <!-- Section - client companies End -->
+
+        <!-- Article 4 Start -->
+        <article class="main__product-feature feature-clipboard flex-column-1">
+          <section class="feature__text text-box-width-1">
+            <h2 class="feature-title heading-2">
+              Clipboard for
+              <abbr title="Operating system for mobile Apple devices">iOS</abbr>
+              and
+              <abbr title="Operating system for desktop Apple devices."
+                >Mac OS</abbr
+              >
+            </h2>
+            <p class="feature-description text-2">
+              Available for free on the App Store. Download for
+              <abbr title="Operating system for desktop Apple devices."
+                >Mac</abbr
+              >
+              or
+              <abbr title="Operating system for mobile Apple devices">iOS</abbr
+              >, sync with iCloud and you’re ready to start adding to your
+              clipboard.
+            </p>
+          </section>
+          <section class="feature-additional-info button-box">
+            <button class="button-download btn-1 text-button">
+              Download for
+              <abbr title="Operating system for mobile Apple devices."
+                >iOS</abbr
+              >
+            </button>
+            <button class="button-download btn-2 text-button">
+              Download for
+              <abbr title="Operating system for desktop Apple devices."
+                >Mac</abbr
+              >
+            </button>
+          </section>
+        </article>
+        <!-- Article 4 End -->
+      </main>
+      <!-- MAIN Start-->
+
+      <!-- FOOTER Start-->
+      <footer class="footer padding-inline-mobile flex-column-1 row-gap-2">
+        <figure class="footer__logo">
+          <img
+            src="./images/logo.svg"
+            alt="Company logo image."
+            width="125"
+            height="125"
+          />
+        </figure>
+        <nav class="footer__navigation flex-column-1 row-gap-1 text-footer">
+          <a class="footer__navigation-link" href="#">FAQs</a>
+          <a class="footer__navigation-link" href="#"> Contact Us</a>
+          <a class="footer__navigation-link" href="#"> Privacy Policy</a>
+          <a class="footer__navigation-link" href="#"> Press Kit</a>
+          <a class="footer__navigation-link" href="#">Install Guide</a>
+        </nav>
+        <ul class="footer__social-media flex-row-1 column-gap-1">
+          <li>
+            <a href="#">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="Facebook icon."
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./images/icon-twitter.svg"
+                alt="Twitter icon."
+                width="24"
+                height="20"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./images/icon-instagram.svg"
+                alt="Instagram icon."
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <!-- FOOTER End-->
+    </div>
+  </body>
+</html>
+
+<!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
