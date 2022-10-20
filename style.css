@@ -311,7 +311,12 @@ button {
   background-color: var(--clr-bg-btn-600-active);
 }
 
-/* Footer navigation */
+/* Footer */
+
+.footer__social-media a:active img {
+  filter: invert(56%) sepia(86%) saturate(400%) hue-rotate(121deg)
+    brightness(94%) contrast(81%);
+}
 
 /* MEDIA QUERIES */
 
