@@ -111,12 +111,18 @@ button {
 .row-gap-5 {
   row-gap: 3.5rem;
 }
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
 
 .padding-inline-mobile {
   padding-inline: var(--padding-inline-mobile);
 }
 .text-box-width-1 {
   width: min(730px, 100%);
+}
+.text-box-width-2 {
+  width: min(350px, 100%);
 }
 
 /* TYPOGRAPHY */
@@ -167,7 +173,7 @@ body {
   line-height: var(--line-height-large);
 }
 
-.text-footer {
+.text-footer > a:any-link {
   font-size: var(--fs-text-2);
   font-weight: var(--fw-400);
   color: var(--clr-font-body-dark);
@@ -323,5 +329,74 @@ button {
   /* Buttons */
   button {
     width: 227px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* UTILITIES */
+  .grid-2-columns {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 6.875rem;
+    align-items: flex-start;
+  }
+  .move-X-1 {
+    transform: translateX(calc(-3rem - var(--padding-inline-mobile)));
+  }
+  .overflow--hidden {
+    overflow: hidden;
+  }
+
+  /* General */
+
+  .snippets__additional-feature-list.flex-column-1 {
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+    padding-top: 4.25rem;
+  }
+
+  .flex-column-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workflow__additional-feature-list {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .workflow__additional-feature-list > li:first-child > img {
+    margin-bottom: -8px;
+  }
+  .main__client-companies {
+    flex-flow: row nowrap;
+    column-gap: 6rem;
+  }
+  .footer {
+    flex-flow: row nowrap;
+    max-height: 150px;
+  }
+  .footer__logo {
+    margin-right: 135px;
+  }
+  .footer__navigation {
+    margin-right: 165px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    gap: 12px 30px;
+    text-align: start;
+  }
+  .footer__navigation a {
+    width: 160px;
+  }
+  .footer__social-media {
+    margin-left: 100px;
+    gap: 24px;
   }
 }
