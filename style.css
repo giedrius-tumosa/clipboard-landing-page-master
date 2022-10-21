@@ -154,7 +154,7 @@ body {
   font-size: var(--fs-text-1);
   font-weight: var(--fw-400);
   color: var(--clr-font-body-medium);
-  padding-top: 1rem;
+  margin-top: 1rem;
   line-height: var(--line-height-large);
 }
 
@@ -162,7 +162,7 @@ body {
   font-size: var(--fs-text-2);
   font-weight: var(--fw-400);
   color: var(--clr-font-body-medium);
-  padding-top: 1rem;
+  margin-top: 1rem;
   line-height: var(--line-height-large);
 }
 
@@ -211,7 +211,7 @@ body {
 }
 
 .header__buttons {
-  padding-block: 48px 0;
+  margin-block: 48px 0;
 }
 
 /* Main */
@@ -272,6 +272,7 @@ main {
   flex: 500px;
   width: 100%;
   background-color: var(--clr-bg-footer);
+  position: relative;
 }
 
 /* GENERAL */
